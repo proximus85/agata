@@ -1,4 +1,2 @@
-*.ibc
-*.o
 .idea
-agata.iml
+*.agata.iml

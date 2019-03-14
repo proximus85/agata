@@ -1,29 +1,21 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-import {AppComponent} from './app.component';
-import {UserComponent} from './user/user.component';
-import {GownoComponent} from './gowno/gowno.component';
-import { AnimalComponent } from './animal/animal.component';
-import { WafelComponent } from './wafel/wafel.component';
-import { SpermaComponent } from './sperma/sperma.component';
-import { TestowyComponent } from './testowy/testowy.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent,
-    GownoComponent,
-    AnimalComponent,
-    WafelComponent,
-    SpermaComponent,
-    TestowyComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule { }

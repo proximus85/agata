@@ -1,0 +1,31 @@
+<div>
+  <div>
+    <h1>Please enter your credentials</h1>
+  </div>
+  <form
+    [formGroup]="credentialsForm">
+    <div>
+      <div>
+        <label for="loginId">Login</label>
+        <input formControlName="login"
+               id="loginId"
+               placeholder="login(required)"
+               required="required"
+               type="text">
+      </div>
+      <div>
+        <label for="passwordId">Password</label>
+        <input formControlName="password"
+               id="passwordId"
+               placeholder="password(required)"
+               required="required"
+               type="text">
+      </div>
+      <button id="registerAccountButtonId" type="button">Register Account</button>
+    </div>
+  </form>
+</div>
+<br>Dirty: {{credentialsForm.dirty}}
+<br>Touched: {{credentialsForm.touched}}
+<br>Valid: {{credentialsForm.valid}}
+<br>Value: {{credentialsForm.value | json}}
